@@ -1,2 +1,3 @@
-# Panesaldes.github.io
-Kentoy's Amazing Portfolio
+#[Kentoy's Amazing Portfolio](https://Panesaldes.github.io)
+
+
