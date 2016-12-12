@@ -1,0 +1,40 @@
+// ##########################
+// CUSTOM MIXINS
+// ##########################
+
+// ##########################
+// MEDIA QUERIES
+// ##########################
+=breakpoint($point)
+  @if $point == lu
+    @media (min-width: 1200px)
+      @content
+  @else if $point == ld
+    @media (max-width: 1200px)
+      @content
+  @else if $point == ml
+    @media (max-width: 1200px) and (min-width: 992px)
+      @content
+  @else if $point == mu
+    @media (min-width: 992px)
+      @content
+  @else if $point == md
+    @media (max-width: 992px)
+      @content
+  @else if $point == sm
+    @media (max-width: 992px) and (min-width: 768px)
+      @content
+  @else if $point == su
+    @media (min-width: 768px)
+      @content
+  @else if $point == sd
+    @media (max-width: 768px)
+      @content
+
+  // OPTIONAL
+  @else if $point == xs
+    @media (max-width: 500px)
+      @content
+  @else if $point == legacy
+    @media (max-width: 350px)
+      @content
