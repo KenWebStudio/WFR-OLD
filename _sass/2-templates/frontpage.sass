@@ -1,0 +1,32 @@
+.fp-top-panel
+  height: 700px
+  .img-background
+    position: absolute
+    z-index: -100
+
+  .container
+    position: relative
+    height: 100%
+    border-left: 1px solid red
+    border-right: 1px solid red
+
+    .img-laptop
+      position: absolute
+      top: 193px
+      left: 97px
+      z-index: 10
+      +animation-delay(100ms)
+
+    .img-mobile
+      position: absolute
+      top: 362px
+      left: 145px
+      z-index: 20
+      +animation-delay(900ms)
+
+    .img-tablet
+      position: absolute
+      top: 324px
+      right: 100px
+      z-index: 30
+      +animation-delay(1100ms)

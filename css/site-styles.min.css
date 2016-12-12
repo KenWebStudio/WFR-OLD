@@ -1,2 +1,2 @@
-
+.fp-top-panel{height:700px}.fp-top-panel .img-background{position:absolute;z-index:-100}.fp-top-panel .container{position:relative;height:100%;border-left:1px solid red;border-right:1px solid red}.fp-top-panel .container .img-laptop{position:absolute;top:193px;left:97px;z-index:10;-webkit-animation-delay:100ms;-moz-animation-delay:100ms;animation-delay:100ms}.fp-top-panel .container .img-mobile{position:absolute;top:362px;left:145px;z-index:20;-webkit-animation-delay:900ms;-moz-animation-delay:900ms;animation-delay:900ms}.fp-top-panel .container .img-tablet{position:absolute;top:324px;right:100px;z-index:30;-webkit-animation-delay:1100ms;-moz-animation-delay:1100ms;animation-delay:1100ms}
 /*# sourceMappingURL=site-styles.min.css.map */
