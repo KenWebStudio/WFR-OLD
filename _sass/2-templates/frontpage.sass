@@ -1,32 +1,90 @@
 .fp-top-panel
   height: 700px
-  .img-background
-    position: absolute
-    z-index: -100
+  background: url(../media/images/frontpage/hero-bg.jpg) no-repeat top center
+  background-size: cover
 
   .container
     position: relative
     height: 100%
-    border-left: 1px solid red
-    border-right: 1px solid red
 
     .img-laptop
+      max-width: 100%
       position: absolute
-      top: 193px
-      left: 97px
-      z-index: 10
+      top: 27.57142%
+      left: 8.29%
       +animation-delay(100ms)
+      +breakpoint(ld)
+        max-width: 80%
 
     .img-mobile
+      max-width: 100%
       position: absolute
-      top: 362px
-      left: 145px
-      z-index: 20
+      top: 51.7412%
+      left: 12.3932%
       +animation-delay(900ms)
+      +breakpoint(ml)
+        left: 10%
+      +breakpoint(md)
+        width: 15%
+        top: 45%
 
     .img-tablet
+      max-width: 100%
       position: absolute
-      top: 324px
-      right: 100px
-      z-index: 30
+      top: 46.2857%
+      right: 8.547%
       +animation-delay(1100ms)
+      +breakpoint(md)
+        width: 50%
+        top: 38.5%
+
+.nav-wrapper
+  padding-left: 0
+  padding-right: 0
+  margin-top: -95px
+
+  .navbar-default
+    background-color: $topNav
+    padding: 25px 35px 20px 50px
+    border-radius: 0
+    border: none
+
+
+    .navbar-brand
+      height: auto
+      padding: 0
+
+  .navbar-nav
+    float: right
+    +breakpoint(sd)
+      float: none
+
+    .active
+      a
+        color: $red
+        background: none
+        &:before
+          +borderBottom()
+          background-color: $red
+          width: 100%
+
+        &:hover, &:focus
+          color: $red
+          background: none
+
+    a
+      padding-left: 0
+      padding-right: 0
+      margin: 0 15px
+
+      &:before
+        +borderBottom()
+        +transition(300ms, all)
+        width: 0
+
+      &:hover
+        color: $red !important
+        &:before
+          content: ""
+          background-color: $red
+          width: 100%
