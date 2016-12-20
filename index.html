@@ -33,14 +33,39 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="height:9000px;">
     <section class="fp-top-panel">
-      <img src="media/images/frontpage/hero-bg.jpg" class="img-background img-responsive">
+      <!-- <img src="media/images/frontpage/hero-bg.jpg" class="img-background"> -->
       <div class="container">
-          <img src="media/images/frontpage/hero-laptop.png" class="img-laptop animated bounceInDown img-responsive">
-          <img src="media/images/frontpage/hero-mobile.png" class="img-mobile animated fadeInLeft img-responsive">
-          <img src="media/images/frontpage/hero-tablet.png" class="img-tablet animated fadeInRight img-responsive">
+          <img src="media/images/frontpage/hero-laptop.png" class="img-laptop animated bounceInDown">
+          <img src="media/images/frontpage/hero-mobile.png" class="img-mobile animated fadeInLeft">
+          <img src="media/images/frontpage/hero-tablet.png" class="img-tablet animated fadeInRight">
       </div>
+    </section>
+
+    <section class="nav-wrapper container">
+      <nav id="nav-sticky" class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navigation" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand"><img src="media/images/logo.png" alt="KennethDLP"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="top-navigation">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
 
   <!-- jQuery Production -->
@@ -56,6 +81,7 @@
   <script src="js/bootstrap.min.js"></script>
 
   <!-- Site Script -->
+  <script src="js/sticky.min.js"></script>
   <script src="js/site-scripts.min.js"></script>
   </body>
 </html>
