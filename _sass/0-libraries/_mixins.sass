@@ -1,13 +1,56 @@
 // ##########################
 // CUSTOM MIXINS
 // ##########################
-=borderBottom()
+
+// Add a :before container to house the bottom border, this allows for a smoother and customizable border animation
+=borderBottom($height)
   content: ""
   position: absolute
   left: 0
   bottom: 0
   display: block
-  height: 3px
+  height: $height
+
+// Change Bootstrap's navbar breakpoint
+=navbarBreakpoint($width)
+  @media(max-width: $width)
+    .navbar-header
+      float: none
+
+    .navbar-left,.navbar-right
+      float: none !important
+
+    .navbar-toggle
+      display: block
+      margin-top: 0
+
+    .navbar-collapse
+      border-top: 1px solid transparent
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+      &.collapse
+        display: none !important
+
+    .navbar-fixed-top
+      top: 0
+      border-width: 0 0 1px
+
+    .navbar-nav
+      float: none !important
+      margin-top: 7.5px
+      &>li
+        float: none
+        &>a
+          padding-top: 10px
+          padding-bottom: 10px
+
+    .collapse.in
+        display: block !important
+        overflow: visible !important
+
+// Even top and bottom padding for inner content.
+=innerPadding($size)
+  padding-top: $size
+  padding-bottom: $size
 
 // ##########################
 // MEDIA QUERIES

@@ -1,36 +1,4 @@
-@media(max-width: 851px)
-  .navbar-header
-    float: none
-
-  .navbar-left,.navbar-right
-    float: none !important
-
-  .navbar-toggle
-    display: block
-    margin-top: 0
-
-  .navbar-collapse
-    border-top: 1px solid transparent
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
-    &.collapse
-      display: none !important
-
-  .navbar-fixed-top
-    top: 0
-    border-width: 0 0 1px
-
-  .navbar-nav
-    float: none !important
-    margin-top: 7.5px
-    &>li
-      float: none
-      &>a
-        padding-top: 10px
-        padding-bottom: 10px
-
-  .collapse.in
-      display: block !important
-      overflow: visible !important
++navbarBreakpoint(851px)
 
 .nav-wrapper
   padding-left: 0
@@ -75,7 +43,7 @@
         color: $red
         background: none
         &:before
-          +borderBottom()
+          +borderBottom(3px)
           background-color: $red
           width: 100%
 
@@ -89,7 +57,7 @@
       margin: 0 15px
 
       &:before
-        +borderBottom()
+        +borderBottom(3px)
         +transition(300ms, all)
         width: 0
 
