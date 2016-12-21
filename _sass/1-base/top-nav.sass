@@ -1,0 +1,104 @@
+@media(max-width: 851px)
+  .navbar-header
+    float: none
+
+  .navbar-left,.navbar-right
+    float: none !important
+
+  .navbar-toggle
+    display: block
+    margin-top: 0
+
+  .navbar-collapse
+    border-top: 1px solid transparent
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+    &.collapse
+      display: none !important
+
+  .navbar-fixed-top
+    top: 0
+    border-width: 0 0 1px
+
+  .navbar-nav
+    float: none !important
+    margin-top: 7.5px
+    &>li
+      float: none
+      &>a
+        padding-top: 10px
+        padding-bottom: 10px
+
+  .collapse.in
+      display: block !important
+      overflow: visible !important
+
+.nav-wrapper
+  padding-left: 0
+  padding-right: 0
+  margin-top: -95px
+  margin-left: auto
+  margin-right: auto
+  +breakpoint(lu)
+    width: 1170px
+  +breakpoint(ml)
+    width: 970px
+  +breakpoint(md)
+    margin-top: -88px
+  +breakpoint(xs)
+    margin-top: -68px
+
+  .navbar-default
+    font-size: 1rem
+    letter-spacing: 1.1px
+    background-color: $topNav
+    padding: 25px 35px 20px 50px
+    border-radius: 0
+    border: none
+    +breakpoint(sm)
+      padding-left: 15px
+      padding-right: 0
+    +breakpoint(xs)
+      padding: 15px 0 10px
+
+
+    .navbar-brand
+      height: auto
+      padding: 0
+
+  .navbar-nav
+    float: right
+    +breakpoint(sd)
+      float: none
+
+    .active
+      a
+        color: $red
+        background: none
+        &:before
+          +borderBottom()
+          background-color: $red
+          width: 100%
+
+        &:hover, &:focus
+          color: $red
+          background: none
+
+    a
+      padding-left: 0
+      padding-right: 0
+      margin: 0 15px
+
+      &:before
+        +borderBottom()
+        +transition(300ms, all)
+        width: 0
+
+      &:hover
+        color: $red !important
+        &:before
+          content: ""
+          background-color: $red
+          width: 100%
+
+      &:focus
+        color: #777 !important

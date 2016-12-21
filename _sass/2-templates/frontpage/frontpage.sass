@@ -1,0 +1,52 @@
+.fp-top-panel
+  height: 700px
+  background: url(../media/images/frontpage/hero-bg.jpg) no-repeat top center
+  background-size: cover
+  +breakpoint(sm)
+    height: 557px
+  +breakpoint(sd)
+    height: 100vh
+  +breakpoint(xs)
+    height: 53vh
+
+  .container
+    position: relative
+    height: 100%
+
+    .img-laptop
+      max-width: 100%
+      position: absolute
+      top: 27.57142%
+      left: 8.29%
+      +animation-delay(100ms)
+      +breakpoint(ld)
+        max-width: 80%
+      +breakpoint(sd)
+        left: 10%
+        max-width: 70%
+      +breakpoint(xs)
+        top: 19%
+
+    .img-mobile
+      max-width: 100%
+      position: absolute
+      top: 51.7412%
+      left: 12.3932%
+      +animation-delay(900ms)
+      +breakpoint(ml)
+        left: 10%
+      +breakpoint(md)
+        width: 15%
+        top: 45%
+
+    .img-tablet
+      max-width: 100%
+      position: absolute
+      top: 46.2857%
+      right: 8.547%
+      +animation-delay(1100ms)
+      +breakpoint(md)
+        width: 50%
+        top: 38.5%
+
+@import "about-me"
