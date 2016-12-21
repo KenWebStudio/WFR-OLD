@@ -5,9 +5,9 @@
   +breakpoint(sm)
     height: 557px
   +breakpoint(sd)
-    height: 100vh
+    height: 387px
   +breakpoint(xs)
-    height: 53vh
+    height: 252px
 
   .container
     position: relative
@@ -50,7 +50,7 @@
         top: 38.5%
 
 .inner
-  +innerPadding(5rem)
+  +innerPadding(2.5rem)
 
   hr
     width: 185px
@@ -58,4 +58,19 @@
     margin-top: 3rem
     margin-bottom: 3rem
 
+#about-me, #portfolio
+  h1, .h1, h2, .h2, .lead
+    span, strong
+      color: $red
+
+  .lead
+    color: $headingFontColor
+    font-family: $headingFont
+    font-size: 2.25rem
+    text-align: center
+
+  .blurb, .core-skills
+    margin-bottom: 3rem
+
 @import "about-me"
+@import "portfolio"
