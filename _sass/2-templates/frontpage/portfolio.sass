@@ -1,9 +1,14 @@
 #portfolio
-  height: 532px
+  height: 550px
   background: url("../media/images/frontpage/featured-works-bg.jpg") left top no-repeat
   background-size: cover
   background-attachment: fixed
   position: relative
+  display: flex
+  align-items: center
+  +breakpoint(sd)
+    height: auto
+    display: block
 
   &::before
     content: ""
@@ -15,3 +20,21 @@
     width: 100%
     height: 100%
     background: url("../media/images/frontpage/featured-works-bg-overlay.png")
+
+
+  .featured-works-carousel
+    padding-top: 2.3125rem
+
+    .carousel-cell
+      padding-left: 5px
+      padding-right: 5px
+
+    .flickity-page-dots
+
+      .dot
+        background-color: $bgColor
+        border: 1px solid $red
+        opacity: 1
+
+        &.is-selected
+          background-color: $red
