@@ -1,0 +1,11 @@
+#resources
+  height: 550px
+  text-align: center
+  +backgroundParallax("../media/images/frontpage/resources-bg.jpg", "../media/images/frontpage/featured-works-bg-overlay.png")
+
+  &:before
+    +transform(scaleX(-1))
+
+  p
+    color: $black
+    font-size:   1.125rem
