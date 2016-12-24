@@ -26,3 +26,29 @@ h3, .h3
 
 p
   color: $regularFontColor
+
+.link-btn
+  color: $black
+  text-transform: uppercase
+  display: inline-block
+  margin-top: 2.6875rem
+  padding: 1.25rem 2.9375rem
+  border: 2px solid $black
+  transition: 255ms all linear
+  &:hover, &:focus
+    color: $white
+    background-color: $black
+    text-decoration: none
+
+  &.red
+    color: $red
+    border-color: $red
+    &:hover, &:focus
+      color: $white
+      background-color: $red
+  &.blue
+    color: $darkBlue
+    border-color: $darkBlue
+    &:hover, &:focus
+      color: $white
+      background-color: $darkBlue
