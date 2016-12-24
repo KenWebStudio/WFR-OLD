@@ -29,6 +29,59 @@
       padding-left: 5px
       padding-right: 5px
 
+      .item
+        a
+          display: block
+          overflow: hidden
+
+          img
+            transition: 300ms all ease-in-out
+          .on-hover
+            display: flex
+            align-items: flex-end
+            justify-content: center
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            visibility: hidden
+            opacity: 0
+            transition: 150ms all ease-in-out
+
+            span
+              color: $white
+              font-size: 1.1rem
+              text-align: center
+              text-shadow: 1px 1px 3px rgba($black,25%)
+              width: 100%
+              margin-left: 5px
+              margin-right: 5px
+              padding-top: 10px
+              padding-bottom: 10px
+              background: url("../media/images/frontpage/featured-works-bg-overlay.png") center center no-repeat
+              background-size: cover
+              box-shadow: 0px -3px 3px rgba($black,0.5%)
+
+              .fa
+                font-size: 0.8531rem
+                padding-right: 5px
+
+          &:hover,&:focus
+            img
+              +transform(rotate(10deg) scale(1.3))
+
+            .on-hover
+              visibility: visible
+              opacity: 1
+
+      &:nth-child(odd)
+        .item a span
+          background-color: darken($red,15%)
+      &:nth-child(even)
+        .item a span
+          background-color: darken($blue,15%)
+
     .flickity-page-dots
 
       .dot
@@ -38,3 +91,15 @@
 
         &.is-selected
           background-color: $red
+
+    .flickity-prev-next-button
+      border-radius: 0
+
+      &.previous
+        left: 0
+
+      &.next
+        right: 0
+
+      .arrow
+        fill: lighten($violet, 15%)
