@@ -8,7 +8,6 @@ $(document).ready(function () {
 
 // Initiate Flickity Carousel for #portfolio
 $('.featured-works-carousel').flickity ({
-  contain: true,
-  groupCells: true,
-  autoPlay: 2500
+  autoPlay: 3500,
+  groupCells: true
 })
